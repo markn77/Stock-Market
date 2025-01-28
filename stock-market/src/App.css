@@ -66,3 +66,26 @@
   align-items: center;
   padding: 50px;
 }
+
+.enterButton {
+  border-radius: 5px;
+  outline-color: blue;
+  background-color: rgb(61, 182, 222);
+  border: 2px solid rgb(4, 4, 154);
+  height: 20px;
+  border-width: 2px;
+  color: white;
+  padding: 5px;
+}
+
+.stockDetails {
+  padding: 20px;
+}
+
+.search {
+  color: white;
+  background-color: rgb(4, 4, 154);
+  border-radius: 5px;
+  border-width: 0px;
+  padding: 2px;
+}

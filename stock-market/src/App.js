@@ -29,20 +29,19 @@ function App() {
         <h1>Villanova Stock Market</h1>
       </div>
       {data ? (
-        <div>
+        <div className='stockDetails'>
           <h2>{data.name}</h2>
           <h2>${data.price}</h2>
           <h2>{convertUnix(data.updated)}</h2>
         </div>
       ) : null}
-      <input class="round-button" 
+      <input class="enterButton" 
         onChange={(e) => {
           setStock(e.target.value);
         }}
         data={stock}
         type="text" placeholder="Enter stocks ticker..."></input>
-      {/* <stockData /> */}
-      <button onClick={getStockData}>Search</button>
+      <button className = "search" onClick={getStockData}>Search</button>
     </div>
   );
 }
