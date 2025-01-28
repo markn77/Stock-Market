@@ -31,3 +31,5 @@ return (
     </div>
 );
 };
+
+export default stockData;
