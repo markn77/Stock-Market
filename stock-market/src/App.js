@@ -24,7 +24,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Stock Market App </h1>
+      <div className='firstDiv'>
+        <img class="logo" src="villanova-logo.png"/>
+        <h1>Villanova Stock Market</h1>
+      </div>
       {data ? (
         <div>
           <h2>{data.name}</h2>
