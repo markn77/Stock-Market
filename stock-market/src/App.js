@@ -16,16 +16,23 @@ function App() {
     console.log(data)
   }
 
+  const convertUnix = (unix_time) => {
+    const date = new Date(unix_time*1000)
+
+    return `${date.toLocaleDateString("en-US")} at ${date.toLocaleTimeString()}`
+  }
+
   return (
     <div className="App">
       <h1>Stock Market App </h1>
       {data ? (
         <div>
           <h2>{data.name}</h2>
-          <h3>${data.price}</h3>
+          <h2>${data.price}</h2>
+          <h2>{convertUnix(data.updated)}</h2>
         </div>
       ) : null}
-      <input 
+      <input class="round-button" 
         onChange={(e) => {
           setStock(e.target.value);
         }}
